@@ -7,11 +7,14 @@ This project implements a real-time object tracking system using YOLOv8 for obje
 # System Requirements:
 
 Operating System: Windows, macOS, or Linux (x86-64)
+
 Python 3.6 or later
+
 OpenCV (cv2)
+
 ultralytics ([invalid URL removed])
 (Optional) CUDA and compatible NVIDIA GPU for faster training (if applicable)
-Installation:
+**Installation:**
 
 # Create a virtual environment:
 ```
@@ -71,21 +74,37 @@ Initializes tracking variables: tracker_initialized, tracker, roi (region of int
 **Enters a loop to process video frames:**
 
 Reads a new frame from the video capture.
+
 If no tracker is initialized (not tracker_initialized):
+
 Performs object detection using the YOLOv8 model.
+
 Extracts bounding boxes and confidence scores.
+
 If an object is detected with confidence greater than 0.5:
+
 Creates an ROI from the bounding box coordinates.
+
 Maps the class index to a class name (assuming you have a mapping mechanism).
+
 Initializes the CSRT tracker with the ROI.
+
 Sets tracker_initialized to True.
-Otherwise:
+
+**Otherwise:**
+
 Updates the tracker to track the object in the new frame.
+
 Draws bounding boxes, confidence scores, and class names on the frame (if tracking is successful) or a "Tracking failure detected" message (if tracking fails).
+
 Displays the video frame with tracking results.
+
 Exits the loop when the 'q' key is pressed.
+
 Releases the video capture and destroys OpenCV windows.
+
 # Additional Notes:
 
-Customizing Object Classes: The provided script assumes a pre-trained YOLOv8 model for bottle detection. You can adapt it to different object classes by replacing the model and potentially modifying the class name mapping logic.
+**Customizing Object Classes:** The provided script assumes a pre-trained YOLOv8 model for bottle detection. You can adapt it to different object classes by replacing the model and potentially modifying the class name mapping logic.
+
 Error Handling: Consider adding more comprehensive error handling for common issues like invalid video paths or model loading failures
