@@ -16,7 +16,7 @@ ultralytics ([invalid URL removed])
 (Optional) CUDA and compatible NVIDIA GPU for faster training (if applicable)
 **Installation:**
 
-# Create a virtual Environment:
+# Create a virtual environment:
 ```
 python -m venv env
 source env/bin/activate
@@ -34,9 +34,13 @@ pip install opencv-python ultralytics
 # Project Structure:
 
 your_project_name/
+
 ├── README.md (this file)
+
 ├── tracking.py (main script)
+
 └── model/ (directory for your trained YOLOv8 model)
+
     └── bottle.pt (example pre-trained model, replace with yours)
 
 # Project Setup:
