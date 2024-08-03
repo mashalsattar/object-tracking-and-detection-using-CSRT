@@ -16,14 +16,14 @@ ultralytics ([invalid URL removed])
 (Optional) CUDA and compatible NVIDIA GPU for faster training (if applicable)
 **Installation:**
 
-# Create a virtual environment:
+# Create a virtual Environment:
 ```
 python -m venv env
 source env/bin/activate
 ```
 **Use code with caution.**
 
-# Install required libraries:
+# Install Required Libraries:
 ```
 pip install opencv-python ultralytics
 ```
