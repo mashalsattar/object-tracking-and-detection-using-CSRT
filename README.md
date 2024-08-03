@@ -41,7 +41,7 @@ your_project_name/
 
 └── model/ (directory for your trained YOLOv8 model)
 
-    └── bottle.pt (example pre-trained model, replace with yours)
+└── bottle.pt (example pre-trained model, replace with yours)
 
 # Project Setup:
 
