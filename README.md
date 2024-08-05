@@ -105,6 +105,35 @@ Training YOLOv8 (if applicable):
 
 **Prepare your dataset:** You'll need a labeled dataset in the COCO format. Tools like VGG Image Annotator (VIA) or LabelImg can be used for labeling.
 
+**Dataset Structure**
+
+**YOLOv8 typically requires the following directory structure:**
+```
+/dataset
+    /images
+        /train
+            image1.jpg
+            image2.jpg
+            ...
+        /val
+            image1.jpg
+            image2.jpg
+            ...
+    /labels
+       /train
+            image1.txt
+            image2.txt
+            ...
+        /val
+            image1.txt
+            image2.txt
+            ...
+```
+
+**Images:** JPEG or PNG files for training and validation.
+
+**Labels:** YOLO format text files (.txt) for annotations 
+
 **Train the model:** Refer to the YOLOv8 documentation (https://github.com/computervisioneng/train-yolov8-custom-dataset-step-by-step-guide) for detailed training instructions. The general steps involve creating a YAML configuration file, preparing your dataset, and running the training script.
 
 # Running the Script:
