@@ -4,6 +4,60 @@
 
 This project implements a real-time object tracking system using YOLOv8 for object detection and the CSRT (Correlation-based Tracker) algorithm for tracking the detected object. It utilizes the ultralytics library for a streamlined YOLOv8 experience. The project is designed to be adaptable to different object tracking scenarios by replacing the pre-trained "bottle.pt" model with one trained on your specific dataset.
 
+# Labeling Dataset with LabelImg
+
+LabelImg is an open-source graphical image annotation tool that is used to label objects in images, typically for object detection tasks. It supports various annotation formats such as YOLO and Pascal VOC.
+
+**Installing LabelImg**
+
+LabelImg can be installed using Python and is compatible with Windows, macOS, and Linux. 
+
+**Install LabelImg:**
+
+You can install LabelImg via pip. Open a terminal or command prompt and run:
+```
+pip install labelimg
+
+```
+
+Alternatively, you can install LabelImg directly from the source if you need the latest version or wish to contribute to development:
+```
+git clone https://github.com/tzutalin/labelImg.git
+cd labelImg
+pip install -r requirements/requirements.txt
+python labelImg.py
+```
+# Using LabelImg to Label Your Dataset
+
+**Open LabelImg:**
+
+After installation, you can start LabelImg by running:
+```
+labelimg
+````
+If you installed from the source, run:
+```
+python labelImg.py
+```
+**Set Up Directories:**
+
+**Open Directory:** Click on "Open Dir" to select the directory where your images are stored.
+
+**Save Directory:** Click on "Change Save Dir" to select the directory where you want to save your annotations.
+
+# **Label Images:**
+
+**Create Annotation:** Click on the “Create RectBox” button (or press W) to start annotating. Draw a rectangle around the object you want to label.
+
+**Enter Label:** After drawing the rectangle, a dialog will appear asking you to enter a label. Type the name of the object (e.g., "cat", "dog", "car").
+
+**Save Annotations:** The annotations are automatically saved in the format you selected (YOLO or Pascal VOC). You can change the format by going to “View” > “Change Output Format” and selecting your preferred format.
+
+**Finish Labeling:**
+Continue labeling each image in your dataset. Once done, all annotations will be saved in the specified directory.
+
+
+
 # System Requirements:
 
 Operating System: Windows, macOS, or Linux (x86-64)
@@ -12,8 +66,6 @@ Python 3.6 or later
 
 OpenCV (cv2)
 
-ultralytics ([invalid URL removed])
-(Optional) CUDA and compatible NVIDIA GPU for faster training (if applicable)
 **Installation:**
 
 # Create a virtual environment:
