@@ -20,13 +20,7 @@ pip install labelimg
 
 ```
 
-Alternatively, you can install LabelImg directly from the source if you need the latest version or wish to contribute to development:
-```
-git clone https://github.com/tzutalin/labelImg.git
-cd labelImg
-pip install -r requirements/requirements.txt
-python labelImg.py
-```
+
 # Using LabelImg to Label Your Dataset
 
 **Open LabelImg:**
