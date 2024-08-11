@@ -182,6 +182,10 @@ Exits the loop when the 'q' key is pressed.
 
 Releases the video capture and destroys OpenCV windows.
 
+# Flowchart Of The Process:
+
+![WhatsApp Image 2024-08-11 at 10 06 29 AM](https://github.com/user-attachments/assets/85ec7ebd-a20d-49d8-8fa5-3cb6dcfeeb02)
+
 # Additional Notes:
 
 **Customizing Object Classes:** The provided script assumes a pre-trained YOLOv8 model for bottle detection. You can adapt it to different object classes by replacing the model and potentially modifying the class name mapping logic.
